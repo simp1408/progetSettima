@@ -1,0 +1,16 @@
+--Select count(*)as totVerbali from Verbale -- 1
+--select count(*)as totVerbaliAnagrafica,ID_anagrafica from verbale   group by ID_anagrafica--2
+--select count(*)as totVerbaliViolazione, ID_violazione from verbale group by ID_violazione--3
+--select  SUM(DecurtamentoPunti) as DecurtamentoPunti from verbale group by ID_anagrafica-- 4
+--select anagrafica.citta,ANAGRAFICA.Cognome,anagrafica.Nome,VERBALE.DataViolazione,Verbale.Importo,Verbale.DecurtamentoPunti FROM anagrafica inner join Verbale
+--on anagrafica.IDanagrafica=Verbale.ID_anagrafica where Citta='Palermo'--5
+--select anagrafica.Cognome,anagrafica.Nome,anagrafica.Indirizzo,verbale.DataViolazione,verbale.importo,verbale.DecurtamentoPunti from anagrafica inner join verbale
+--on anagrafica.IDanagrafica=Verbale.ID_violazione where verbale.DataViolazione BETWEEN VERBALE.DataViolazione and VERBALE.DataViolazione--6
+--select ID_anagrafica ,sum(importo) as importo from verbale group by ID_anagrafica--7
+--select * from ANAGRAFICA where Citta='Palermo'--8
+--stored procedure
+--select Nominativo_Agente,count(ID_violazione) as Violazione from verbale group by Nominativo_Agente--10
+--select anagrafica.Cognome,ANAGRAFICA.Nome,ANAGRAFICA.Indirizzo,verbale.DataViolazione,VERBALE.Importo,verbale.DecurtamentoPunti from anagrafica inner join
+--verbale on anagrafica.IDanagrafica=verbale.IDverbale where DecurtamentoPunti>5--11
+--select ANAGRAFICA.Cognome, ANAGRAFICA.Nome,ANAGRAFICA.Indirizzo,VERBALE.DataViolazione,verbale.Importo,verbale.DecurtamentoPunti from ANAGRAFICA
+--inner join verbale on ANAGRAFICA.IDanagrafica= verbale.IDverbale where Importo>500--12
